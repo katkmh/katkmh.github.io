@@ -7,7 +7,7 @@ const sections = ["about", "experience", "connect"];
 export function Hero() {
   return (
     <div className="pl-7 lg:pl-24 2xl:pl-80 lg:pt-36 2xl:pt-56">
-      <div className="mt-24 lg:mt-0 2xl:pb-32">
+      <div className="mt-24 lg:mt-0 lg:pb-32">
         <section className="mb-8">
           <p className="text-5xl font-pixel-square">Kat Hernandez</p>
           <p className="text-xl font-mono">Senior Software Engineer</p>
