@@ -8,7 +8,7 @@ export function Connect() {
           Get in touch 👋🏼{"\u00A0\u00A0\u00A0"}—{" "}
           <Link
             href="mailto:hernandez.kkm@gmail.com"
-            className="text-blue-500 font-medium font-mono hover:underline underline-offset-6"
+            className="text-blue-500 dark:text-blue-400 font-medium font-mono hover:underline underline-offset-6"
           >
             hernandez.kkm@gmail.com
           </Link>

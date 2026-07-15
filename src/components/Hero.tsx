@@ -16,7 +16,7 @@ export function Hero() {
               <a
                 key={id}
                 href={`#${id}`}
-                className="font-mono lowercase tracking-wide hover:tracking-[3] hover:bg-linear-to-r from-neutral-50 to-neutral-50/0 to-40% transition-all duration-200"
+                className="font-mono lowercase tracking-wide hover:tracking-[3] hover:bg-linear-to-r from-neutral-50 dark:from-slate-600/50 to-neutral-50/0 to-40%  transition-all duration-200"
               >
                 {id.charAt(0).toLowerCase() + id.slice(1)}
               </a>
@@ -26,13 +26,25 @@ export function Hero() {
       </div>
       <div className="flex gap-2">
         <Link href="https://www.linkedin.com/in/katkmh/">
-          <img src="/linked-in.svg" alt="Logo" className="w-6 h-6 2xl:w-7 2xl:h-7" />
+          <img
+            src="/linked-in.svg"
+            alt="Logo"
+            className="w-6 h-6 2xl:w-7 2xl:h-7"
+          />
         </Link>
         <Link href="mailto:hernandez.kkm@gmail.com">
-          <img src="/gmail.svg" alt="Logo" className="w-6 h-6 2xl:w-7 2xl:h-7" />
+          <img
+            src="/gmail.svg"
+            alt="Logo"
+            className="w-6 h-6 2xl:w-7 2xl:h-7"
+          />
         </Link>
         <Link href="https://github.com/katkmh">
-          <img src="/github.svg" alt="Logo" className="w-6 h-6 2xl:w-7 2xl:h-7" />
+          <img
+            src="/github.svg"
+            alt="Logo"
+            className="w-6 h-6 2xl:w-7 2xl:h-7 dark:invert"
+          />
         </Link>
       </div>
     </div>

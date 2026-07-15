@@ -1,13 +1,20 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 :root {
-  --color-neutral-50: oklch(98.5% 0.001 106.423);
-  --color-slate-100: oklch(12.9% 0.042 264.695);
+  --color-background: oklch(98.5% 0.001 106.423); /* neutral-50 */
+  --color-text: oklch(12.9% 0.042 264.695); /* slate 100 */
+}
+
+:root.dark {
+  --color-background: oklch(18.9% 0.018 264.695);
+  --color-text: oklch(92.5% 0.005 106.423);
 }
 
 @theme inline {
-  --color-background: var(--color-neutral-50);
-  --color-foreground: var(--color-slate-100);
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -17,6 +24,6 @@
 }
 
 body {
-  background: var(--color-neutral-50);
-  color: var(--color-slate-100);
+  background: var(--color-background);
+  color: var(--color-text);
 }

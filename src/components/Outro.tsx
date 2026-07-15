@@ -9,14 +9,14 @@ export function Outro() {
           Built with{" "}
           <Link
             href="https://nextjs.org/"
-            className="text-blue-500 font-mono hover:underline"
+            className="text-blue-500 dark:text-blue-400 font-mono hover:underline"
           >
             Next.js
           </Link>{" "}
           and{" "}
           <Link
             href="https://opencode.ai/"
-            className="text-blue-500 font-mono hover:underline"
+            className="text-blue-500 dark:text-blue-400 font-mono hover:underline"
           >
             opencode
           </Link>
@@ -25,7 +25,7 @@ export function Outro() {
           <Link
             href="https://zed.dev/"
             rel="noopener noreferrer"
-            className="text-blue-500 font-mono hover:underline"
+            className="text-blue-500 dark:text-blue-400 font-mono hover:underline"
           >
             Zed
           </Link>
