@@ -1,13 +1,7 @@
 import "./globals.css";
 
 import { GeistMono } from "geist/font/mono";
-import {
-  GeistPixelCircle,
-  GeistPixelGrid,
-  GeistPixelLine,
-  GeistPixelSquare,
-  GeistPixelTriangle,
-} from "geist/font/pixel";
+import { GeistPixelSquare } from "geist/font/pixel";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 
@@ -27,9 +21,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} ${GeistMono.variable} ${GeistPixelSquare.variable}
-        ${GeistPixelGrid.variable} ${GeistPixelCircle.variable} ${GeistPixelTriangle.variable}
-        ${GeistPixelLine.variable} h-full antialiased`}
+      className={`${GeistSans.variable} ${GeistMono.variable} ${GeistPixelSquare.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
