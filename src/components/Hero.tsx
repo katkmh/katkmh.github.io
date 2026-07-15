@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const sections = ["about", "experience", "connect"];
@@ -26,23 +27,29 @@ export function Hero() {
       </div>
       <div className="flex gap-2">
         <Link href="https://www.linkedin.com/in/katkmh/">
-          <img
+          <Image
             src="/linked-in.svg"
             alt="Logo"
+            width={24}
+            height={24}
             className="w-6 h-6 2xl:w-7 2xl:h-7"
           />
         </Link>
         <Link href="mailto:hernandez.kkm@gmail.com">
-          <img
+          <Image
             src="/gmail.svg"
             alt="Logo"
+            width={24}
+            height={24}
             className="w-6 h-6 2xl:w-7 2xl:h-7"
           />
         </Link>
         <Link href="https://github.com/katkmh">
-          <img
+          <Image
             src="/github.svg"
             alt="Logo"
+            width={24}
+            height={24}
             className="w-6 h-6 2xl:w-7 2xl:h-7 dark:invert"
           />
         </Link>
