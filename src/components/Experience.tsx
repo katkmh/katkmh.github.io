@@ -51,7 +51,7 @@ export function Experience() {
         {experiences.map((experience, i) => (
           <div
             key={i}
-            className="flex flex-col gap-3 px-7 py-5 rounded-lg hover:bg-neutral-50/30 hover:shadow-md hover:shadow-mist-300/50 transition-all duration-300"
+            className="flex flex-col gap-3 -mx-7 px-7 py-5 rounded-lg hover:bg-neutral-50/30 hover:shadow-md hover:shadow-mist-300/50 transition-all duration-300"
           >
             <div className="grid grid-cols-4">
               <div className="font-mono uppercase text-sm">
