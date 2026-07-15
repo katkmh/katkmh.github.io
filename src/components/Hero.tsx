@@ -6,13 +6,13 @@ const sections = ["about", "experience", "connect"];
 
 export function Hero() {
   return (
-    <div className="md:pl-8 2xl:pl-80 2xl:pt-56">
-      <div>
-        <div className="2xl:pb-32">
-          <section className="mb-8">
-            <p className="text-5xl font-pixel-square">Kat Hernandez</p>
-            <p className="text-xl font-mono">Senior Software Engineer</p>
-          </section>
+    <div className="pl-7 lg:pl-24 2xl:pl-80 lg:pt-36 2xl:pt-56">
+      <div className="mt-24 lg:mt-0 2xl:pb-32">
+        <section className="mb-8">
+          <p className="text-5xl font-pixel-square">Kat Hernandez</p>
+          <p className="text-xl font-mono">Senior Software Engineer</p>
+        </section>
+        <div className="hidden lg:block">
           <section className="flex flex-col">
             {sections.map((id) => (
               <a
@@ -25,17 +25,35 @@ export function Hero() {
             ))}
           </section>
         </div>
-        <div className="flex gap-2">
-          <Link href="https://www.linkedin.com/in/katkmh/">
-            <Image src="/linked-in.svg" alt="Logo" width={28} height={28} />
-          </Link>
-          <Link href="mailto:hernandez.kkm@gmail.com">
-            <Image src="/gmail.svg" alt="Logo" width={30} height={30} />
-          </Link>
-          <Link href="https://github.com/katkmh">
-            <Image src="/github.svg" alt="Logo" width={27} height={27} />
-          </Link>
-        </div>
+      </div>
+      <div className="flex gap-2">
+        <Link href="https://www.linkedin.com/in/katkmh/">
+          <Image
+            src="/linked-in.svg"
+            alt="Logo"
+            width={28}
+            height={28}
+            className="w-6 h-6 2xl:w-7 2xl:h-7"
+          />
+        </Link>
+        <Link href="mailto:hernandez.kkm@gmail.com">
+          <Image
+            src="/gmail.svg"
+            alt="Logo"
+            width={30}
+            height={30}
+            className="w-6 h-6 2xl:w-7 2xl:h-7"
+          />
+        </Link>
+        <Link href="https://github.com/katkmh">
+          <Image
+            src="/github.svg"
+            alt="Logo"
+            width={27}
+            height={27}
+            className="w-6 h-6 2xl:w-7 2xl:h-7"
+          />
+        </Link>
       </div>
     </div>
   );

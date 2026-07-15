@@ -5,7 +5,7 @@ import { Placeholder } from "./Placeholder";
 
 const experiences = [
   {
-    dateRange: "2025 - Present",
+    dateRange: "2025-Present",
     position: "Senior Software Engineer",
     company: "Synacy, Inc.",
     summary: null,
@@ -27,7 +27,7 @@ const experiences = [
     ],
   },
   {
-    dateRange: "2021 - 2023",
+    dateRange: "2021-2023",
     position: "Software Engineer",
     company: "Loadshift",
     summary: null,
@@ -35,7 +35,7 @@ const experiences = [
     technologies: ["Angular", "Typescript", "PHP", "MySQL", "RabbitMQ"],
   },
   {
-    dateRange: "2019 - 2021",
+    dateRange: "2019-2021",
     position: "Frontend Web Developer",
     company: "University of the Philippines Diliman",
     summary: null,
@@ -47,11 +47,11 @@ const experiences = [
 export function Experience() {
   return (
     <div>
-      <section id="experience" className="flex flex-col gap-8">
+      <section id="experience" className="flex flex-col gap-10 2xl:gap-8">
         {experiences.map((experience, i) => (
           <div
             key={i}
-            className="flex flex-col gap-3 -mx-7 px-7 py-5 rounded-lg hover:bg-neutral-50/30 hover:shadow-md hover:shadow-mist-300/50 transition-all duration-300"
+            className="flex flex-col gap-3 px-7 lg:px-24 2xl:-mx-7 2xl:px-7 py-0 2xl:py-5 rounded-lg hover:bg-neutral-50/30 hover:shadow-md hover:shadow-mist-300/50 transition-all duration-300"
           >
             <div className="grid grid-cols-4">
               <div className="font-mono uppercase text-sm">
@@ -110,7 +110,7 @@ export function Experience() {
         <Link
           href="/resume.pdf"
           target="_blank"
-          className="flex items-center gap-2 hover:text-blue-500 transition-colors duration-300"
+          className="flex items-center px-7 2xl:px-0 gap-2 hover:text-blue-500 transition-colors duration-300"
         >
           <span>View my resume</span>
           <ArrowRightIcon className="size-5 text-blue-500" />

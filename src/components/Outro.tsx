@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Outro() {
   return (
-    <div className="w-md mb-32">
+    <div className="w-md mb-6 2xl:mb-32 px-7 2xl:px-0">
       <p className="text-sm">
         🚀 Built with{" "}
         <Link
@@ -21,6 +21,7 @@ export function Outro() {
         . Coded in{" "}
         <Link
           href="https://zed.dev/"
+          rel="noopener noreferrer"
           className="text-blue-500 font-mono hover:underline"
         >
           Zed
