@@ -1,15 +1,37 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-neutral-50: oklch(98.5% 0.001 106.423);
+  --color-slate-100: oklch(12.9% 0.042 264.695);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--color-neutral-50);
+  --color-foreground: var(--color-slate-100);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+@utility font-pixel-square {
+  font-family: var(--font-geist-pixel-square);
+}
+
+@utility font-pixel-grid {
+  font-family: var(--font-geist-pixel-grid);
+}
+
+@utility font-pixel-circle {
+  font-family: var(--font-geist-pixel-circle);
+}
+
+@utility font-pixel-triangle {
+  font-family: var(--font-geist-pixel-triangle);
+}
+
+@utility font-pixel-line {
+  font-family: var(--font-geist-pixel-line);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +42,7 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-neutral-50);
+  color: var(--color-slate-100);
   font-family: Arial, Helvetica, sans-serif;
 }
