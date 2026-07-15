@@ -2,7 +2,7 @@
 
 Personal portfolio site built with [Next.js](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com), and [Heroicons](https://heroicons.com).
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 - **Framework:** Next.js 16 (App Router, static export)
 - **Styling:** Tailwind CSS v4
