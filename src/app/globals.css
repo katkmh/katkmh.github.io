@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@variant dark (&:where(.dark, .dark *));
-
 :root {
   --color-neutral-50: oklch(98.5% 0.001 106.423);
   --color-slate-100: oklch(12.9% 0.042 264.695);
@@ -16,13 +14,6 @@
 
 @utility font-pixel-square {
   font-family: var(--font-geist-pixel-square);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
