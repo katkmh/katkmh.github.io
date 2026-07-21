@@ -149,6 +149,9 @@ export function Experience() {
   return (
     <div>
       <section id="experience" className="flex flex-col gap-10 2xl:gap-8">
+        <p className="lg:hidden font-mono lowercase text-lg px-7 lg:px-24 2xl:px-0">
+          experience
+        </p>
         {experiences.map((experience, i) => (
           <div
             key={i}
