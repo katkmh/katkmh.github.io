@@ -24,7 +24,7 @@ const experiences: {
       <>
         <p>
           Involved in technical discussions shaping new projects under the
-          team's domains.
+          team&#39;s domains.
         </p>
         <ul className="list-disc list-inside mt-2 space-y-1 marker:text-blue-300">
           <li>
@@ -93,7 +93,7 @@ const experiences: {
       <>
         <p>
           Part of the foundational team that integrated Loadshift into
-          Freightlancer, <span className="font-mono text-blue-500 dark:text-blue-400">Freelancer.com</span>'s freight marketplace platform.
+          Freightlancer, <span className="font-mono text-blue-500 dark:text-blue-400">Freelancer.com</span>&#39;s freight marketplace platform.
         </p>
         <ul className="list-disc list-inside mt-2 space-y-1 marker:text-blue-300">
           <li>Took charge of the domain migration</li>
