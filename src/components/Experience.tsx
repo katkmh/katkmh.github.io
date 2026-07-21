@@ -26,24 +26,17 @@ const experiences: {
           Involved in technical discussions shaping new projects under the
           team's domains.
         </p>
-        <ul className="list-disc list-inside mt-2 space-y-1">
+        <ul className="list-disc list-inside mt-2 space-y-1 marker:text-blue-300">
           <li>
-            Set up a Hubspot cache in S3 using a Lambda function hooked to a
-            Hubspot automation.
+            Set up an internal cache system that unifies our business data from different third-party platforms
           </li>
           <li>
-            Integrated Sentry alerts to our ECS tasks and Lambda functions to
-            aid on-call support.
+            Integrated alerts to our scheduled tasks and functions to aid on-call support.
           </li>
           <li>
             Spearheaded loading legacy data from Podio to our internal service.
             This includes verifying and organizing data according to the latest
             business rules.
-          </li>
-          <li>
-            Dockerized an app that supports sales information systems. It is a
-            service that loads data into S3, and is used with Athena and
-            QuickSight for visualization.
           </li>
           <li>
             Maintained existing Make automations that synced data to Airtable.
@@ -60,17 +53,15 @@ const experiences: {
             <p>
               Joined as an engineer working remotely from Metro Manila.
             </p>
-            <ul className="list-disc list-inside mt-2 space-y-1">
+            <ul className="list-disc list-inside mt-2 space-y-1 marker:text-blue-300">
               <li>
                 Set up foundational deployment code for a new app using AWS CDK.
               </li>
               <li>
-                Built initial n8n workflow for syncing data from internal tools
-                to Podio.
+                Built workflows that synced data from internal apps to third-party services.
               </li>
               <li>
-                Integrated Mapbox to our Slack Bot to show location query results
-                visually.
+                Enhanced location queries for field engineers by integrating map visualization.
               </li>
               <li>
                 Refactored legacy code to better define production and staging
@@ -102,9 +93,9 @@ const experiences: {
       <>
         <p>
           Part of the foundational team that integrated Loadshift into
-          Freightlancer, Freelancer.com's freight marketplace platform.
+          Freightlancer, <span className="font-mono text-blue-500 dark:text-blue-400">Freelancer.com</span>'s freight marketplace platform.
         </p>
-        <ul className="list-disc list-inside mt-2 space-y-1">
+        <ul className="list-disc list-inside mt-2 space-y-1 marker:text-blue-300">
           <li>Took charge of the domain migration</li>
           <li>
             Created an internal QMS used by operation agents in managing freight
@@ -138,7 +129,7 @@ const experiences: {
           Photogrammetry to create a GIS web portal for a land use and zoning
           research and development project.
         </p>
-        <ul className="list-disc list-inside mt-2 space-y-1">
+        <ul className="list-disc list-inside mt-2 space-y-1 marker:text-blue-300">
           <li>
             Designed and coded the different views of the site
           </li>
@@ -214,7 +205,7 @@ export function Experience() {
           target="_blank"
           className="flex items-center px-7 2xl:px-0 gap-2 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
         >
-          <span>View my resume</span>
+          <span>View my full resume</span>
           <ArrowRightIcon className="size-5 text-blue-500 dark:text-blue-400" />
         </Link>
       </section>
