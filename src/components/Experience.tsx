@@ -28,10 +28,12 @@ const experiences: {
         </p>
         <ul className="list-disc list-inside mt-2 space-y-1 marker:text-blue-300">
           <li>
-            Set up an internal cache system that unifies our business data from different third-party platforms
+            Set up an internal cache system that unifies our business data from
+            different third-party platforms
           </li>
           <li>
-            Integrated alerts to our scheduled tasks and functions to aid on-call support.
+            Integrated alerts to our scheduled tasks and functions to aid
+            on-call support.
           </li>
           <li>
             Spearheaded loading legacy data from Podio to our internal service.
@@ -50,26 +52,24 @@ const experiences: {
         role: "Software Engineer",
         content: (
           <>
-            <p>
-              Joined as an engineer working remotely from Metro Manila.
-            </p>
+            <p>Joined as an engineer working remotely from Metro Manila.</p>
             <ul className="list-disc list-inside mt-2 space-y-1 marker:text-blue-300">
               <li>
                 Set up foundational deployment code for a new app using AWS CDK.
               </li>
               <li>
-                Built workflows that synced data from internal apps to third-party services.
+                Built workflows that synced data from internal apps to
+                third-party services.
               </li>
               <li>
-                Enhanced location queries for field engineers by integrating map visualization.
+                Enhanced location queries for field engineers by integrating map
+                visualization.
               </li>
               <li>
                 Refactored legacy code to better define production and staging
                 configuration.
               </li>
-              <li>
-                Facilitated an Agile learning session with interns.
-              </li>
+              <li>Facilitated an Agile learning session with interns.</li>
             </ul>
           </>
         ),
@@ -93,7 +93,11 @@ const experiences: {
       <>
         <p>
           Part of the foundational team that integrated Loadshift into
-          Freightlancer, <span className="font-mono text-blue-500 dark:text-blue-400">Freelancer.com</span>&#39;s freight marketplace platform.
+          Freightlancer,{" "}
+          <span className="font-mono text-blue-500 dark:text-blue-400">
+            Freelancer.com
+          </span>
+          &#39;s freight marketplace platform.
         </p>
         <ul className="list-disc list-inside mt-2 space-y-1 marker:text-blue-300">
           <li>Took charge of the domain migration</li>
@@ -130,9 +134,7 @@ const experiences: {
           research and development project.
         </p>
         <ul className="list-disc list-inside mt-2 space-y-1 marker:text-blue-300">
-          <li>
-            Designed and coded the different views of the site
-          </li>
+          <li>Designed and coded the different views of the site</li>
           <li>
             Created data visualization views with geographical and statistical
             data using Django and GeoNode
@@ -162,7 +164,9 @@ export function Experience() {
                 <p>{experience.dateRange}</p>
               </div>
               <div className="col-span-3">
-                <p className="font-mono text-lg/snug lg:group-hover:text-blue-500 dark:lg:group-hover:text-blue-400 transition-colors duration-300">{experience.company}</p>
+                <p className="font-mono text-lg/snug lg:group-hover:text-blue-500 dark:lg:group-hover:text-blue-400 transition-colors duration-300">
+                  {experience.company}
+                </p>
                 <p className="font-bold">{experience.position}</p>
               </div>
               <div className="col-start-2 col-span-3 mt-1">
