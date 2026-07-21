@@ -1,19 +1,87 @@
 import ArrowRightIcon from "@heroicons/react/24/outline/ArrowRightIcon";
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 import { Placeholder } from "./Placeholder";
 
-const experiences = [
+const experiences: {
+  dateRange: string;
+  position: string;
+  company: string;
+  summary: ReactNode | null;
+  supplementary: {
+    year: string;
+    role?: string;
+    content: ReactNode | null;
+  }[];
+  technologies: string[];
+}[] = [
   {
     dateRange: "2025-Present",
     position: "Senior Software Engineer",
     company: "Synacy, Inc.",
-    summary: null,
+    summary: (
+      <>
+        <p>
+          Involved in technical discussions shaping new projects under the
+          team's domains.
+        </p>
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>
+            Set up a Hubspot cache in S3 using a Lambda function hooked to a
+            Hubspot automation.
+          </li>
+          <li>
+            Integrated Sentry alerts to our ECS tasks and Lambda functions to
+            aid on-call support.
+          </li>
+          <li>
+            Spearheaded loading legacy data from Podio to our internal service.
+            This includes verifying and organizing data according to the latest
+            business rules.
+          </li>
+          <li>
+            Dockerized an app that supports sales information systems. It is a
+            service that loads data into S3, and is used with Athena and
+            QuickSight for visualization.
+          </li>
+          <li>
+            Maintained existing Make automations that synced data to Airtable.
+          </li>
+        </ul>
+      </>
+    ),
     supplementary: [
       {
         year: "2023-2025",
         role: "Software Engineer",
-        content: null,
+        content: (
+          <>
+            <p>
+              Joined as an engineer working remotely from Metro Manila.
+            </p>
+            <ul className="list-disc list-inside mt-2 space-y-1">
+              <li>
+                Set up foundational deployment code for a new app using AWS CDK.
+              </li>
+              <li>
+                Built initial n8n workflow for syncing data from internal tools
+                to Podio.
+              </li>
+              <li>
+                Integrated Mapbox to our Slack Bot to show location query results
+                visually.
+              </li>
+              <li>
+                Refactored legacy code to better define production and staging
+                configuration.
+              </li>
+              <li>
+                Facilitated an Agile learning session with interns.
+              </li>
+            </ul>
+          </>
+        ),
       },
     ],
     technologies: [
@@ -30,7 +98,32 @@ const experiences = [
     dateRange: "2021-2023",
     position: "Software Engineer",
     company: "Loadshift",
-    summary: null,
+    summary: (
+      <>
+        <p>
+          Part of the foundational team that integrated Loadshift into
+          Freightlancer, Freelancer.com's freight marketplace platform.
+        </p>
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Took charge of the domain migration</li>
+          <li>
+            Created an internal QMS used by operation agents in managing freight
+            jobs posted
+          </li>
+          <li>
+            Implemented saved filters for the browse page with ElasticSearch
+          </li>
+          <li>
+            Streamlined use of Google Maps API that reduced costs by around
+            $2,000 AUD/month
+          </li>
+          <li>
+            Conceptualized a driving mode AI chat assistant feature using OpenAI
+          </li>
+          <li>Kicked off writing UI tests using Protractor</li>
+        </ul>
+      </>
+    ),
     supplementary: [],
     technologies: ["Angular", "Typescript", "PHP", "MySQL", "RabbitMQ"],
   },
@@ -38,7 +131,24 @@ const experiences = [
     dateRange: "2019-2021",
     position: "Frontend Web Developer",
     company: "University of the Philippines Diliman",
-    summary: null,
+    summary: (
+      <>
+        <p>
+          Worked with a team from UP Training Center for Applied Geodesy and
+          Photogrammetry to create a GIS web portal for a land use and zoning
+          research and development project.
+        </p>
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>
+            Designed and coded the different views of the site
+          </li>
+          <li>
+            Created data visualization views with geographical and statistical
+            data using Django and GeoNode
+          </li>
+        </ul>
+      </>
+    ),
     supplementary: [],
     technologies: ["Django", "Geonode", "Javascript", "jQuery", "HTML + CSS"],
   },
@@ -62,11 +172,7 @@ export function Experience() {
                 <p className="font-bold">{experience.position}</p>
               </div>
               <div className="col-start-2 col-span-3 mt-1">
-                {experience.summary ? (
-                  <p>{experience.summary}</p>
-                ) : (
-                  <Placeholder rows={3} />
-                )}
+                {experience.summary ?? <Placeholder rows={3} />}
               </div>
             </div>
 
@@ -84,11 +190,7 @@ export function Experience() {
                     </div>
                   )}
                   <div className="col-start-2 col-span-3 mt-1">
-                    {supplementary.content ? (
-                      <p>{supplementary.content}</p>
-                    ) : (
-                      <Placeholder rows={3} />
-                    )}
+                    {supplementary.content ?? <Placeholder rows={3} />}
                   </div>
                 </div>
               ))}
